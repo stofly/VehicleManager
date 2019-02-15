@@ -1,0 +1,31 @@
+table{
+	border-spacing: 10px 10px;
+	align-content: auto;
+}
+
+.tableContainer{
+	width:716px;
+	border:1px solid #000;
+}
+#applyTitle{
+	font-size: 35px;
+}
+.img{
+	width: 30%;
+	height: 50%;
+}
+#nextStep{
+	display:inline-block;
+	width:60px;
+	text-align:center;
+	float:right;
+	
+	background-color:  #66d9ff;
+	color: white;
+	border-radius: 5px;
+
+}
+#nextStep:hover {
+	background-color: #0086b3;
+	cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.btnStep{
+	display:inline-block;
+	width:60px;
+	text-align:center;
+	float:right;
+	margin:8px;
+	
+	background-color:#85a3e0;
+	color: white;
+	border-radius: 5px;
+
+}
+.btnStep:hover {
+	background-color:#1d96e8;
+	cursor: pointer;
+}

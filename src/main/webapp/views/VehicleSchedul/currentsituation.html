@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>车辆当前状态</title>
+<link rel="stylesheet" type="text/css" href="/ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/ui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="/css/image.css">
+<script type="text/javascript" src="/ui/jquery.min.js"></script>
+<script type="text/javascript" src="/ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src='/js/utils/utils.js'></script>
+<script type="text/javascript" src="/js/VehicleSchedul/currentsituation.js"></script>
+</head>
+<body>
+	<table id="test"></table>
+	<div id="w" class="easyui-window" title="申请调度" style="width: 550px" data-options="closed:true">
+		<form id="updateUserForm" method="post" enctype="multipart/form-data" target="upload">
+			<input id="cid" name="cid" type="hidden">
+			<table cellpadding="5" border="0" style="width: 520px">
+				<tr>
+					<td>车牌号码:</td>
+					<td><input id="acnum" type="text" name="cnum" /></td>
+				</tr>
+				<tr>
+					<td>车辆型号:</td>
+					<td><input id="actype" name="ctype" type="text" /></td>
+				</tr>
+				<tr>
+					<td>司机:</td>
+					<td><input id="sj" class="easyui-combobox" value="--请选择--"/></td>
+				</tr>
+				<tr>
+					<td>出车理由:</td>
+					<td><input id="reason" name="reason" type="text" /></td>
+				</tr>
+				<tr>
+					<td>出车时间:</td>
+					<td><input id="startime" class="easyui-datetimebox" name="intime" data-options="showSeconds:true" style="width: 150px"></td>
+				</tr>
+				<tr>
+					<td>返回时间:</td>
+					<td><input id="endtime" class="easyui-datetimebox" name="intime" data-options="showSeconds:true" style="width: 150px"></td>
+				</tr>
+				<tr>
+					<td align="center"><button id="updateUser" type="button">申请</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

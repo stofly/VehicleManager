@@ -1,0 +1,13 @@
+{                                                      
+	"total":8,                                                      
+	"rows":[                                                          
+		{"id":"1","user_code":"呼呼","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"2","user_code":"呼呼1","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"3","user_code":"呼呼2","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"4","user_code":"呼呼3","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"5","user_code":"呼呼3","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"6","user_code":"呼呼4","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"7","user_code":"呼呼5","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"},
+		{"id":"8","user_code":"呼呼6","user_sex":"男","user_college":"计算机学院","user_major":"移动互联网","user_tel":"15936194577"}
+		]                                                          
+}                                                           

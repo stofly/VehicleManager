@@ -1,0 +1,15 @@
+.div1 {
+         float: center;
+}
+
+.file_input {
+        width: 70px;/*因为file-input在部分浏览器中会自带一个输入框，需要双击才可以点击上传,放大后将其定位到div外面就好啦*/
+        height: 20px;       
+        z-index:1;
+        -moz-opacity: 0;
+        -ms-opacity: 0;
+        -webkit-opacity: 0;
+        opacity: 1;  /*css属性——opcity不透明度，取值0-1*/
+        filter: alpha(opacity=0); /*兼容IE8及以下--filter属性是IE特有的，它还有很多其它滤镜效果，而filter: alpha(opacity=0); 兼容IE8及以下的IE浏览器(如果你的电脑IE是8以下的版本，使用某些效果是可能会有一个允许ActiveX的提示,注意点一下就ok啦)*/
+        cursor: pointer;
+}

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>驾驶员信息管理</title>
+<link rel="stylesheet" type="text/css" href="/ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/ui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="/css/image.css">
+<script type="text/javascript" src="/ui/jquery.min.js"></script>
+<script type="text/javascript" src="/ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src='/js/utils/utils.js'></script>
+<script type="text/javascript" src="/js/InAndOutRecordManage/InAndOut2.js"></script>
+</head>
+<body>
+	<!--搜索区  -->
+	<!-- <div class="easyui-panel">
+		<form id="searchForm">
+			<table cellpadding="5">
+				<tr>
+					<td>用户名：</td>
+					<td><input name="user_code" type="text" id="user_code" /></td>
+					<td>用户类型：</td>
+					<td><select name="user_type" panelHeight="auto" id="user_type"
+						class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="超级管理员">超级管理员</option>
+							<option value="院系联系人">院系联系人</option>
+							<option value="公司负责人">公司负责人</option>
+							<option value="普通管理员">普通管理员</option>
+					</select></td>
+					<td>所属公司：</td>
+					<td><input name="user_companyid" class="easyui-combobox"
+						id="queryCompany" /></td>
+					<td>政治面貌:</td>
+					<td><select name="user_politics" panelHeight="auto"
+						class="easyui-combobox" id="user_politics" editable="flase">
+							<option>---请选择---</option>
+							<option value="共青团员">共青团员</option>
+							<option value="党员">党员</option>
+							<option value="群众">群众</option>
+							<option value="其他">其他</option>
+					</select></td>
+				</tr>
+			</table>
+			<button type="button" id="btnSearch" onclick="query()">查询</button>
+		</form>
+	</div> -->
+	<table id="test"></table>
+	<div id="e" class="easyui-window" title="添加记录" style="width: 550px" data-options="closed:true">
+		<form id="adduserForm" method="post" enctype="multipart/form-data">
+			<input name="rid" type="hidden">
+			<table cellpadding="5" border="0" style="width: 520px">
+				<tr>
+					<td>车牌号码:</td>
+					<td><input type="text" class="easyui-validatebox" data-options="required:true" name="inum" /></td>
+				</tr>
+
+				<tr>
+					<td>司机姓名:</td>
+					<td><input name="adrivername" class="easyui-validatebox" data-options="required:true" type="text" /></td>
+				</tr>
+
+				<tr>
+					<td>驾驶证编号:</td>
+					<td><input name="idrivernum" class="easyui-validatebox" data-options="required:true" type="text" /></td>
+				</tr>
+				<tr>
+					<td>通行证编号:</td>
+					<td><input name="keynum" class="easyui-validatebox" data-options="required:true" type="text" /></td>
+				</tr>
+				<tr>
+					<td>进入时间:</td>
+					<td><input class="easyui-datetimebox" name="intime" data-options="showSeconds:true" style="width:150px"></td>
+
+				</tr>
+				<tr>
+					<td>开出时间:</td>
+					<td><input class="easyui-datetimebox" name="outtime" data-options="showSeconds:true" style="width:150px"></td>
+				</tr>
+				<tr>
+					<td align="center"><button id="addUser" type="button">保存</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

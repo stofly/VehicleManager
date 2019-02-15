@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>进出车记录管理</title>
+<link rel="stylesheet" type="text/css" href="/ui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/ui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="/css/image.css">
+<script type="text/javascript" src="/ui/jquery.min.js"></script>
+<script type="text/javascript" src="/ui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/ui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src='/js/utils/utils.js'></script>
+<script type="text/javascript" src="/js/InAndOutRecordManage/InAndOut.js"></script>
+</head>
+<body>
+	<!--搜索区  -->
+	<!-- <div class="easyui-panel">
+		<form id="searchForm">
+			<table cellpadding="5">
+				<tr>
+					<td>用户名：</td>
+					<td><input name="user_code" type="text" id="user_code" /></td>
+					<td>用户类型：</td>
+					<td><select name="user_type" panelHeight="auto" id="user_type"
+						class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="超级管理员">超级管理员</option>
+							<option value="院系联系人">院系联系人</option>
+							<option value="公司负责人">公司负责人</option>
+							<option value="普通管理员">普通管理员</option>
+					</select></td>
+					<td>所属公司：</td>
+					<td><input name="user_companyid" class="easyui-combobox"
+						id="queryCompany" /></td>
+					<td>政治面貌:</td>
+					<td><select name="user_politics" panelHeight="auto"
+						class="easyui-combobox" id="user_politics" editable="flase">
+							<option>---请选择---</option>
+							<option value="共青团员">共青团员</option>
+							<option value="党员">党员</option>
+							<option value="群众">群众</option>
+							<option value="其他">其他</option>
+					</select></td>
+				</tr>
+			</table>
+			<button type="button" id="btnSearch" onclick="query()">查询</button>
+		</form>
+	</div> -->
+	<table id="test"></table>
+	<div id="w" class="easyui-window" title="修改用户" style="width: 550px" data-options="closed:true">
+		<form id="updateUserForm" method="post" enctype="multipart/form-data" target="upload">
+			<input name="did" type="hidden">
+			<table cellpadding="5" border="0" style="width: 520px">
+				<tr>
+					<td>驾驶员姓名:</td>
+					<td><input type="text" name="drivername" /></td>
+				</tr>
+
+				<tr>
+					<td>驾龄:</td>
+					<td><input name="driverage" type="text" /></td>
+				</tr>
+
+				<tr>
+					<td>驾驶找类型:</td>
+					<td><select name="drivertype" style="width: 175px" panelHeight="auto" class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="A1">A1</option>
+							<option value="A2">A2</option>
+							<option value="B1男">B1</option>
+							<option value="B2">B2</option>
+							<option value="C1">C1</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>等级:</td>
+					<td><input name="drivergrade" type="text" /></td>
+				</tr>
+				<tr>
+					<td>驾照编号:</td>
+					<td><input name="driverid" type="text" /></td>
+				</tr>
+				<tr>
+					<td>联系方式:</td>
+					<td><input name="drivertel" type="text" /></td>
+				</tr>
+
+				<tr>
+					<td>状态:</td>
+					<td><select name="driverstate" panelHeight="auto" style="width: 175px" class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="可用">可用</option>
+							<option value="繁忙">繁忙</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td align="center"><button id="updateUser" type="button">修改</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div id="e" class="easyui-window" title="添加用户" style="width: 550px" data-options="closed:true">
+		<form id="adduserForm" method="post" enctype="multipart/form-data">
+			<input name="user_id" type="hidden">
+			<table cellpadding="5" border="0" style="width: 520px">
+				<tr>
+					<td>驾驶员姓名:</td>
+					<td><input type="text" name="drivername" /></td>
+				</tr>
+
+				<tr>
+					<td>驾龄:</td>
+					<td><input name="driverage" type="text" /></td>
+				</tr>
+
+				<tr>
+					<td>驾驶找类型:</td>
+					<td><select name="drivertype" style="width: 175px" panelHeight="auto" class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="A1">A1</option>
+							<option value="A2">A2</option>
+							<option value="B1男">B1</option>
+							<option value="B2">B2</option>
+							<option value="C1">C1</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>等级:</td>
+					<td><input name="drivergrade" type="text" /></td>
+				</tr>
+				<tr>
+					<td>驾照编号:</td>
+					<td><input name="driverid" type="text" /></td>
+				</tr>
+				<tr>
+					<td>联系方式:</td>
+					<td><input name="drivertel" type="text" /></td>
+				</tr>
+
+				<tr>
+					<td>状态:</td>
+					<td><select name="driverstate" panelHeight="auto" style="width: 175px" class="easyui-combobox" editable="flase">
+							<option>---请选择---</option>
+							<option value="可用">可用</option>
+							<option value="有计划">有计划</option>
+							<option value="繁忙">繁忙</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td align="center"><button id="addUser" type="button">保存</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

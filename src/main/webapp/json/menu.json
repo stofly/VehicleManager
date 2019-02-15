@@ -1,0 +1,61 @@
+{
+	"menus": [
+		{
+			"menuid": "100",
+			"menuname": "用户管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": [
+				{
+					"menuid": "101",
+					"menuname": "用户管理",
+					"url": "userControl.html",
+					"icon": "icon-log",
+					"menus": []
+				},
+				{
+					"menuid": "102",
+					"menuname": "权限管理",
+					"url": "userControl.html",
+					"icon": "icon-log",
+					"menus": []
+				}
+			]
+		},
+		{
+			"menuid": "200",
+			"menuname": "考核管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": []
+		},
+		{
+			"menuid": "300",
+			"menuname": "资助管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": []
+		},
+		{
+			"menuid": "400",
+			"menuname": "信息管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": []
+		},
+		{
+			"menuid": "500",
+			"menuname": "团队管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": []
+		},
+		{
+			"menuid": "600",
+			"menuname": "资产管理",
+			"url": "-",
+			"icon": "icon-sys",
+			"menus": []
+		}
+	]
+}

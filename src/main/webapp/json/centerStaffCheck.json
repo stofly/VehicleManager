@@ -1,0 +1,10 @@
+{                                                      
+	"total":5,                                                      
+	"rows":[                                                          
+		{"id":"1","staff_code":"吴晓敏","staff_college":"计算机学院","staff_major":"移动互联网","staff_class":"二班","staff_sno":"15936194577","staff_tel":"15936194577","staff_qq":"123456789","staff_job":"干事"},
+		{"id":"2","staff_code":"吴晓敏","staff_college":"计算机学院","staff_major":"移动互联网","staff_class":"二班","staff_sno":"15936194577","staff_tel":"15936194577","staff_qq":"123456789","staff_job":"干事"},
+		{"id":"3","staff_code":"吴晓敏","staff_college":"计算机学院","staff_major":"移动互联网","staff_class":"二班","staff_sno":"15936194577","staff_tel":"15936194577","staff_qq":"123456789","staff_job":"干事"},
+		{"id":"4","staff_code":"吴晓敏","staff_college":"计算机学院","staff_major":"移动互联网","staff_class":"二班","staff_sno":"15936194577","staff_tel":"15936194577","staff_qq":"123456789","staff_job":"干事"},
+		{"id":"5","staff_code":"吴晓敏","staff_college":"计算机学院","staff_major":"移动互联网","staff_class":"二班","staff_sno":"15936194577","staff_tel":"15936194577","staff_qq":"123456789","staff_job":"干事"}
+		]                                                          
+}                                                           

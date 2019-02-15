@@ -1,0 +1,32 @@
+[
+		
+		{
+    "user_id": 23,
+    "user_code": "123478",
+    "user_pwd": "123478",
+    "user_type": "超级管理员",
+    "user_tel": "15037511308",
+    "user_wx": "wcy177",
+    "user_sno": "161530255",
+    "user_nation": "汉",
+    "user_card": "41272419960606400",
+    "user_email": "1554097124@qq.com",
+    "user_familyphone": "15037511286",
+    "user_politics": "党员",
+    "user_sex": "男",
+    "user_age": 18,
+    "user_image": null,
+    "user_education": "专科",
+    "user_enterSchool": "2010-02-20",
+    "user_major": "软件工程",
+    "user_homeaddr": "河南省太康县",
+    "user_graduation": "2018-03-20",
+    "user_educationBackground": "无",
+    "user_experience": "无",
+    "user_rewardsPunishment": "无",
+    "user_facilityid": 15,
+    "user_companyid": 1,
+    "company": null,
+    "college": null
+  }                                               
+]

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+   
+}
+.container{
+    padding: 0 3em;
+    align: center;
+
+}
+.context{
+    float: left;
+
+    width: 30%;
+    height: 600px;
+    background-color: rgb(241, 228, 228);
+    padding: 0.5em;
+  
+ 
+    }
+.preFormat{
+    font-size:14px ;
+    font-weight: bold ;
+    line-height: 1.5em
+}

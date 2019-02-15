@@ -1,0 +1,84 @@
+table{
+	border-spacing: 10px 10px;
+	align-content: auto;
+}
+
+.tableContainer{
+	width:716px;
+	border:1px solid #000;
+}
+
+
+#applyTitle{
+	font-size: 35px;
+	margin: 1em auto;
+	text-align: center;
+
+}
+
+.img{
+	width: 30%;
+	height: 50%;
+}
+#nextStep{
+	display:inline-block;
+	width:60px;
+	text-align:center;
+	float:right;
+	
+	background-color:  #66d9ff;
+	color: white;
+	border-radius: 5px;
+
+}
+#nextStep:hover {
+	background-color: #0086b3;
+	cursor: pointer;
+}
+/* 段落缩进 */
+p{
+	text-indent: 2em
+	
+}
+/* 正文 */
+.text{
+	background-color: rgb(243, 236, 226);
+	margin: 0 auto;
+}
+/* 适用于较短的input */
+.autoInput{
+	width: 4em;
+}
+/* 包裹两个底部的两个并排div */
+
+.containDivParallel{
+
+	background-color: rgb(243, 236, 226);
+}
+.leftDiv{
+	
+	float: left;
+	display: inline-block;
+	width: 50%;
+	margin-left: 0;
+	background-color: rgb(243, 236, 226);
+	
+}
+.rightDiv{
+	background-color: rgb(243, 236, 226);
+	float: left;
+	width: 50%;
+
+
+}
+input{
+	background-color:  rgb(243, 236, 226);
+	border: 0px;
+	border-bottom:1px solid rgb(51, 49, 49);
+	font-size: 1em;
+	text-indent: 1em;
+
+}
+.saveBtn {
+	padding: 0 504px;
+}

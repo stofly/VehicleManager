@@ -1,0 +1,82 @@
+body{
+	font-size:12px;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height:23px;
+	margin:0;
+	padding:0;
+	background:url(../images/login_bg.jpg);
+	color:#3b6e81;
+	}
+.mouseon{
+	cursor:url(../images/disable.ico),auto;
+}
+.mouseon1{
+	cursor:default;
+}
+.second_body{
+	margin:0 auto;
+	width:330px;
+	height:243px;
+	margin-top:10%;
+	padding-left:300px;
+	padding-top:110px;
+	background:url(../images/login_panel.png) no-repeat;
+    position:relative;
+	}
+
+.title-zh
+{
+    position:absolute;
+    top:50px;
+    left:320px;
+    font-size:26px;
+    font-weight:900;
+    color:#0074a6;
+}
+
+.title-en
+{
+    position:absolute;
+    top:70px;
+    left:312px;
+    color:#9aa5a9;
+}
+
+ .message
+{   
+    position:absolute;
+    bottom:80px;
+    left:312px;
+    color:red;
+}
+
+.logo
+{
+     position:absolute;
+     left:50px;
+     top:80px;
+}
+
+.login,.login2{
+	width:150px;
+	border:1px solid #7fb5c1;
+	height:22px;
+	vertical-align:text-bottom;
+	}
+.login2{
+	width:125px;
+	}
+.login_button,.reset_botton{
+	
+	width:58px;
+	height:26px;
+    line-height:26px;
+	border:none;
+	color:#FFF;
+	font-weight:bold;
+	background:url(../images/login1.jpg);
+	margin-left:15px;
+	}
+.reset_botton{
+	background:url(../images/reset.jpg);
+	}
